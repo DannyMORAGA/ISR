@@ -5,22 +5,20 @@ import java.util.Scanner;
 
 
 public class MATRIZ_040219 {
-   
+      public static  Scanner Leer =new Scanner(System.in);//Declaramos un Scanner para que lea los dato.
+      public static  String StrMatriz [][];//Declaramos una Matriz tipo String.
+      public static  int intSuelBas=0, intBoni=0, intComi=0, intDesJudi=0, intSuelLi1=0, intSuelLi2=0, intSuelLi3=0, intSuelLi4=0, intDep=0, intISR=0, intIGGS=0, intIGGS2=0 ;//Declaramos unas variables tipo entero para los calculos con numeros.
+      public static  String strSuelBas1, strBoni1, strComi1, strDesJudi1, strSuelLi8, strDep1, strIRS2, strIGGS2;//Declaramos unas variables String para poder mostrar
+      public static  double  dblISR1=0, dblIGGS1=0,dblSuelLi4=0, dblSuelLi5=0, dblSuelLi6=0, dblSuelLi7=0 ;//Declaramos variables tipo Double para la operaciones con punto decimal.
+ 
+     
+      
     public static void MAKEMAT(){
-    Scanner Leer =new Scanner(System.in);//Declaramos un Scanner para que lea los dato.
-        String StrMatriz [][];//Declaramos una Matriz tipo String.
-        StrMatriz = new String[10][10];//Le damos tamaño a la matriz.
-        int intSuelBas=0, intBoni=0, intComi=0, intDesJudi=0, intSuelLi1=0, intSuelLi2=0, intSuelLi3=0, intSuelLi4=0, intDep=0, intISR=0, intIGGS=0, intIGGS2=0 ;//Declaramos unas variables tipo entero para los calculos con numeros.
-        String strSuelBas1, strBoni1, strComi1, strDesJudi1, strSuelLi8, strDep1, strIRS2, strIGGS2;//Declaramos unas variables String para poder mostrar
-        double  dblISR1=0, dblIGGS1=0,dblSuelLi4=0, dblSuelLi5=0, dblSuelLi6=0, dblSuelLi7=0 ;//Declaramos variables tipo Double para la operaciones con punto decimal.
-        System.out.println("Bienvenido!!!! INGRESO DE PLANILLA\n");
-        
-        
+        StrMatriz = new String[10][10];//Le damos tamaño a la matriz. 
         for(int intCont=0; intCont<10; intCont++){//Pedimos los codigos de los empleados
           System.out.println("Ingrese el codigo del Empleado en la posicion: ["+intCont+"] [0]");
           StrMatriz[intCont][0]=Leer.next();//Se Guarda en la Matriz
         }
-        
          System.out.println("\n");
         
         for(int intCont=0; intCont<10; intCont++){//Pedimos los Nombres de los empleados
